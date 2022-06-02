@@ -1,0 +1,62 @@
+body {
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Redressed', cursive;
+background-color: #5600A7;
+}
+
+.titulo{
+  text-align: center;
+  background-color: black;
+  color: yellow;
+}
+
+.tituloBienvenida{
+  text-align: center;
+  background-color: black;
+  color: yellow;
+};
+
+.pure-button{
+  position:absolute; z-index: 40;
+}
+
+.centrarVertical{
+  text-align:center;
+  position:relative; z-index: 40;
+}
+
+.containerJuego1{
+text-align: center;
+background-color: #F11F0F;
+}
+
+.containerJuego2{
+text-align: center;
+background-color: #2F1EDD;
+}
+
+.containerJuego3{
+text-align: center;
+background-color: #ECFF33;
+}
+
+.containerJuego4{
+text-align: center;
+background-color: #874408;
+}
+
+.containerJuego5{
+text-align: center;
+background-color: #2D8240;
+}
+
+.preguntas{
+  color:white;
+  text-align:center;
+  padding-bottom:20px;
+  
+}
+
+.terminar{
+  text-align:center;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trivia Harry Potter</title>
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Redressed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<script>
+  //Prompt de bienvenida
+ let nombre = prompt("Hola, ¿Cuál es tu nombre?");
+//si el nombre ingresado son sólo números o está vacío, no lo aceptará y lo volverá a pedir. El nombre puede incluir numeros y caracteres.
+while (!nombre || Number(nombre)) {
+  alert("¿estás escribiendo tu nombre de forma correcta? Prueba de nuevo");
+  nombre = prompt("Hola, ¿Cuál es tu nombre?");
+}
+if (isNaN(nombre) && nombre !== null) {
+  let respuesta = `<h2 class="tituloBienvenida">Bienvenid@ ${nombre} al juego!!!</h2>`;
+  document.write(respuesta);
+ }
+</script>
+
+    <div class="centrarVertical">
+        <a href="#containerdeJuego"><button class="pure-button" type="button" value="enviar" onclick="showDiv()" style="background:#FDE70F; font-family: 'Fira Sans',sans-serif;font-family: 'Redressed',cursive; border-radius: 8px; height: 50px; ">Ingresa al juego!!!</button></a>
+    </div>
+<header>
+    <h1 class="titulo">&#9889;Trivia de Harry Potter &#9889;</h1>
+  <img src="./img/16367392288904.jpg" alt="harry, ron y hermione" style="width:100%;height:800px;">
+  </header>
+
+<div id="containerdeJuego">
+<div class="containerJuego1" id="containerJuego" style="display:none;">
+  <img src="./img/trevor.jpg" alt="trevor" style="height:200px">
+  <div class="preguntas">
+  <label id="pregunta1">¿Cuál es el nombre de la mascota de Neville?</label> <br>
+<select id="p1">
+  <option value="none" selected disabled hidden>Elige una opción</option>
+  <option value="" id="respuesta1p1">Trevor</option>
+  <option value="" id="respuesta2p1" >Nagini</option>
+  <option value="" id="respuesta3p1">Snape</option>
+</select>
+</div>
+  <a href="#containerdeJuego2"><button class="pure-button" type="button" id="question1" onclick="showDiv2()" style="background:#FDE70F; font-family: 'Fira Sans',sans-serif;font-family: 'Redressed',cursive; border-radius: 8px; height: 50px; ">Siguiente</button></a>
+</div>
+
+<div id="containerdeJuego2" class="containerJuego2" style="display:none;" >
+  <img src="./img/0000196_set-de-7-de-marcapaginas-horrocrux-harry-potter_550.jpeg" alt="horrocrux" style="height:200px;" >
+<div class="preguntas">
+  <label id="pregunta2">¿Cuál de estos es un Horrocrux de Voldemort?</label> <br>
+  <select id="p2" >
+    <option value="none" selected disabled hidden>Elige una opción</option>
+    <option value="" id="respuesta1p2">La espada de Gryffindor</option>
+    <option value="" id="respuesta2p2">La tiara de Ravenclaw</option>
+    <option value="" id="respuesta3p2">La canasta de Slytherin</option>
+  </select>
+</div>
+  <a href="#containerdeJuego3"><button class="pure-button" type="button" id="question2" onclick="showDiv3()" style="background:#FDE70F; font-family: 'Fira Sans',sans-serif;font-family: 'Redressed',cursive; border-radius: 8px; height: 50px;">Siguiente</button></a>
+</div>
+
+<div id="containerdeJuego3" class="containerJuego3" style="display:none;">
+  <img src="./img/548954.jpg" alt="hufflepuff" style="height:200px;">
+  <div class="preguntas" style="color:black;">
+    <label id="pregunta3">¿Cuál es el símbolo de la casa Hufflepuf?</label> <br>
+  <select id="p3">
+    <option value="none" selected disabled hidden>Elige una opción</option>
+    <option value="" id="respuesta1p3">Un fénix</option>
+    <option value="" id="respuesta2p3">Un león</option>
+    <option value="" id="respuesta3p3">Un tejón</option>
+  </select>
+</div>
+  <a href="#containerdeJuego4"><button class="pure-button" type="button" id="question3" onclick="showDiv4()" style="background:#FDE70F; font-family: 'Fira Sans',sans-serif;font-family: 'Redressed',cursive; border-radius: 8px; height: 50px; ">Siguiente</button></a>
+</div>
+
+<div id="containerdeJuego4" class="containerJuego4" style="display:none;">
+  <img src="./img/450_1000.jpg" alt="reliquias" style="height:200px;">
+  <div class="preguntas">
+    <label id="pregunta4">¿Cuáles son las reliquias de la muerte?</label> <br>
+  <select id="p4">
+    <option value="none" selected disabled hidden>Elige una opción</option>
+    <option value="" id="respuesta1p4">La espada, la capa y el sombrero</option>
+    <option value="" id="respuesta2p4">La varita, la piedra y la capa</option>
+    <option value="" id="respuesta3p4">El león, la bruja y el ropero</option>
+  </select>
+  </div>
+  <a href="#containerdeJuego5"><button class="pure-button" type="button" id="question4" onclick="showDiv5()" style="background:#FDE70F; font-family: 'Fira Sans',sans-serif;font-family: 'Redressed',cursive; border-radius: 8px; height: 50px; ">Siguiente</button></a>
+</div>
+
+<div id="containerdeJuego5" class="containerJuego5" style="display:none;" >
+  <img src="./img/professor snape.jpg" alt="profesor snape" style="height:200px;">
+  <div class="preguntas">
+    <label id="pregunta5">¿Cuál es la frase célebre que el profesor Snape dijo a Dumbledore?</label><br>
+  <select id="p5">
+    <option value="none" selected disabled hidden>Elige una opción</option>
+    <option value="" id="respuesta1p5">"Always"</option>
+    <option value="" id="respuesta2p5">"Forever"</option>
+    <option value="" id="respuesta3p5">"Avada Kedavra"</option>
+  </select>
+  </div>
+ <button class="pure-button" type="button" id="question5" onclick="bigFunction()" style="background:#FDE70F; font-family: 'Fira Sans',sans-serif;font-family: 'Redressed',cursive; border-radius: 8px; height: 50px;">Terminar juego</button>
+</div>
+<div class="terminar">
+<a href="#"><button class="pure-button" type="button" onclick="window.location.reload();" style="background:#FDE70F; font-family: 'Fira Sans',sans-serif;font-family: 'Redressed',cursive; border-radius: 8px; height: 50px;">Volver a jugar</button></a>
+</div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
