@@ -8,7 +8,7 @@ Nuestro primer diseño al planificar nuestro proyecto
 
 **_Decidimos que tendría 5 preguntas de 3 alternativas_**
 
-## Disponible en:
+## Disponible en: https://enchantress21001990.github.io/TriviaHarryPotter/#containerdeJuego5
 
 
 ## ¿Cómo jugar?
