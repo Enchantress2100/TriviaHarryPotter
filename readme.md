@@ -1,7 +1,7 @@
 # Trivia de Harry Potter
 Esta es una trivia creada con el fin de entretener y ver qué tanto conoces de esta saga que es tan famosa en todo el mundo.
 ## Triada 3.1
-Somos Sarahy, Andrea y Consuelo
+Mi nombre es Consuelo
 ## ¿Cómo empezó esto?
 Nuestro primer diseño al planificar nuestro proyecto
 <img src="img/primerBosquejo.png">
